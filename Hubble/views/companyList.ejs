@@ -1,0 +1,25 @@
+<% include partials/header %>
+
+<div class="container">
+    <div class = "row text-center">
+        <% companies.forEach(function(company){%>
+        <div class="card mx-auto my-2" style="width:18rem;">
+          <img class="card-img-top" src="<%=company.cimg%>" alt="Card image cap">
+          <div class="card-body">
+                <h5 class="card-title"><%= company.company %></h5>
+                <p class="card-text"><%= company.industry %></p>
+                <a href="/companies/<%=company._id %>" class="btn btn-primary">View</a>
+          </div>
+        </div>
+        <% }); %>
+        
+    </div>
+    <div class = "row text-center">
+        <a class = "btn btn-primary btn-lg btn-block" href="/companies/new">Create Company</a>
+    </div>
+    
+</div>
+    
+
+
+<% include partials/footer %>

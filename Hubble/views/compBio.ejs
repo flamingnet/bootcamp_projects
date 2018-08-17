@@ -1,0 +1,58 @@
+<% include partials/header %>
+
+ <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4"><%= company.company %></h1>
+        <p class="lead"><%= company.bio %></p>
+    </div>
+</div>
+<div class = "container">
+ <div class = "row">
+    <div class="card mx-auto my-2" style="width:18rem;">
+          <img class="card-img-top" src="<%=company.f1img%>" alt="Card image cap">
+          <div class="card-body">
+                <h5 class="card-title"><%= company.founder1 %></h5>
+                <p class="card-text"><%= company.founder1title %></p>
+          </div>
+    </div>
+    <div class="card mx-auto my-2" style="width:18rem;">
+          <img class="card-img-top" src="<%=company.f2img%>" alt="Card image cap">
+          <div class="card-body">
+                <h5 class="card-title"><%= company.founder2 %></h5>
+                <p class="card-text"><%= company.founder2title %></p>
+          </div>
+    </div>
+    <div class="card mx-auto my-2" style="width:18rem;">
+          <img class="card-img-top" src="<%=company.f3img%>" alt="Card image cap">
+          <div class="card-body">
+                <h5 class="card-title"><%= company.founder3 %></h5>
+                <p class="card-text"><%= company.founder3title %></p>
+          </div>
+    </div>
+ </div>
+</div>
+
+<!--company: company,
+        bio: bio,
+        cimg: cimg,
+        industry: industry,
+        founder1: founder1,
+        founder1title: founder1title,
+        f1img: f1img,
+        founder2: founder2,
+        founder2title: founder2title,
+        f2img: f2img,
+        founder3: founder3,
+        founder3title: founder3title,
+        f3img: f3img,
+        milestone1Title: milestone1Title,
+        milestone1Date: milestone1Date,
+        milestone1Desc: milestone1Desc,
+        milestone2Title: milestone2Title,
+        milestone2Date: milestone2Date,
+        milestone2Desc: milestone2Desc,
+        milestone3Title: milestone3Title,
+        milestone3Date: milestone3Date,
+        milestone3Desc: milestone3Desc-->
+
+<% include partials/footer %>

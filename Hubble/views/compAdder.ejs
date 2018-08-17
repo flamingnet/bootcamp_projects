@@ -1,0 +1,110 @@
+<% include partials/header %>
+
+<div class = "container">
+    
+    
+    
+   <!-- company: company,
+        bio: bio,
+        cimg: cimg,
+        industry: industry,
+        founder1: founder1,
+        founder1title: founder1title,
+        f1img: f1img,
+        founder2: founder2,
+        founder2title: founder2title,
+        f2img: f2img,
+        founder3: founder3,
+        founder3title: founder3title,
+        f3img: f3img,
+        milestone1Title: milestone1Title,
+        milestone1Date: milestone1Date,
+        milestone1Desc: milestone1Desc,
+        milestone2Title: milestone2Title,
+        milestone2Date: milestone2Date,
+        milestone2Desc: milestone2Desc,
+        milestone3Title: milestone3Title,
+        milestone3Date: milestone3Date,
+        milestone3Desc: milestone3Desc-->
+    <div class = "row text-center">
+        <div class = "col">
+            <h1>Add a Company</h1>
+        </div>
+    </div>
+        <form action="/companies" method="POST">
+              <div class="form-group">
+                    <input type="text" class="form-control" name="company" placeholder="Company Name">
+              </div>
+              <div class="form-group">
+                    <textarea  class="form-control" name="bio" placeholder="Company Bio"></textarea>
+              </div>
+              <div class="form-group">
+                    <input type="text" class="form-control" name="cimg" placeholder="Company Image">
+              </div>
+              <div class="form-group">
+                    <input type="text" class="form-control" name="industry" placeholder="Company Industry">
+              </div>
+              <div class="form-group">
+                    <input type="text" class="form-control" name="founder1" placeholder="Founder #1">
+              </div>
+              <div class="form-group">
+                    <input type="text" class="form-control" name="founder1title" placeholder="Founder #1's Title">
+              </div>
+              <div class="form-group">
+                    <input type="text" class="form-control" name="f1img" placeholder="Founder #1's Image">
+              </div>
+              <div class="form-group">
+                    <input type="text" class="form-control" name="founder2" placeholder="Founder #2">
+              </div>
+              <div class="form-group">
+                    <input type="text" class="form-control" name="founder2title" placeholder="Founder #2's Title">
+              </div>
+              <div class="form-group">
+                    <input type="text" class="form-control" name="f2img" placeholder="Founder #2's Image">
+              </div>
+              <div class="form-group">
+                    <input type="text" class="form-control" name="founder3" placeholder="Founder #3">
+              </div>
+              <div class="form-group">
+                    <input type="text" class="form-control" name="founder3title" placeholder="Founder #3 Title">
+              </div>
+              <div class="form-group">
+                    <input type="text" class="form-control" name="f3img" placeholder="Founder #3 Image">
+              </div>
+              <div class="form-group">
+                    <input type="text" class="form-control" name="milestone1Title" placeholder="Milestone 1">
+              </div>
+              <div class="form-group">
+                    <input type="text" class="form-control" name="milestone1Date" placeholder="Milestone 1 Date">
+              </div>
+              <div class="form-group">
+                    <input type="text" class="form-control" name="milestone1Desc" placeholder="Milestone 1 Description">
+              </div>
+              <div class="form-group">
+                    <input type="text" class="form-control" name="milestone2Title" placeholder="Milestone 2">
+              </div>
+              <div class="form-group">
+                    <input type="text" class="form-control" name="milestone2Date" placeholder="Milestone 2 Date">
+              </div>
+              <div class="form-group">
+                    <input type="text" class="form-control" name="milestone2Desc" placeholder="Milestone 2 Description">
+              </div>
+              <div class="form-group">
+                    <input type="text" class="form-control" name="milestone3Title" placeholder="Milestone 3">
+              </div>
+              <div class="form-group">
+                    <input type="text" class="form-control" name="milestone3Date" placeholder="Milestone 3 Date">
+              </div>
+              <div class="form-group">
+                    <input type="text" class="form-control" name="milestone3Desc" placeholder="Milestone 3 Description">
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+        </form>
+        
+        <a href="/companies" class ="btn btn-secondary btn-lg btn-block">Go Back</a>
+</div>
+
+
+
+<% include partials/footer %>
